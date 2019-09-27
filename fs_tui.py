@@ -29,3 +29,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."""
 
 import sys
+import argparse as AP
+
+# Commandline argument parsing
+PARSER = AP.ArgumentParser(prog='cross2rekordbox_xml',
+                           description='Tool to fix beatgrid offsets in'
+                           'rekordbox.xml exported by Mixvibes Cross.')
+PARSER.add_argument('-d', '--dump', action='store_true',
+                    help='Dump fixed XML to standard output instead of file')
+PARSER.add_argument('-v', '--verbose', action='store_true',
+                    help='Display a list of items fixed in the output file')
+PARSER.add_argument('-D', '--debug', action='store_true',
+                    help='Enable debug mode')
+ARGS = PARSER.parse_args()
+
+print('FS_TUI')
+exit()
